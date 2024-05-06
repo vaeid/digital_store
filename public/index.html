@@ -74,11 +74,55 @@
         </div>
         <div class="flex items-center justify-between mb-3">
           <span class="text-secondary-400 text-sm md:text-base">اپل</span>
-          <div class="flex items-center">
-            <div class="rounded-full bg-blue-500 w-6 h-6 cursor-pointer border-2 border-white"></div>
-            <div class="rounded-full bg-red-500 w-6 h-6 cursor-pointer -mr-1.5 border-2 border-white"></div>
-            <div class="rounded-full bg-green-500 w-6 h-6 cursor-pointer -mr-1.5 border-2 border-white"></div>
-            <div class="rounded-full bg-red-500 w-6 h-6 cursor-pointer -mr-1.5 border-2 border-white"></div>
+          <div x-data="{color: 'red'}" class="flex items-center">
+            <div
+              @click="color='blue'"
+              class="rounded-full bg-blue-500 w-6 h-6 cursor-pointer border-2 border-white flex items-center justify-center"
+            >
+              <svg
+                x-show="color === 'blue'"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 stroke-white"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+            </div>
+            <div
+              @click="color='red'"
+              class="rounded-full bg-red-500 w-6 h-6 cursor-pointer -mr-1.5 border-2 border-white flex items-center justify-center"
+            >
+              <svg
+                x-show="color === 'red'"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 stroke-white"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+            </div>
+            <div
+              @click="color='green'"
+              class="rounded-full bg-green-500 w-6 h-6 cursor-pointer -mr-1.5 border-2 border-white flex items-center justify-center"
+            >
+              <svg
+                x-show="color === 'green'"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 stroke-white"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+            </div>
           </div>
         </div>
         <div class="font-bold mb-2 text-xs mb-3">ساعت هوشمند اپل سری 6</div>
