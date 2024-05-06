@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digitize App - Shop</title>
     <link rel="stylesheet" href="./build/tailwind.css" />
-    <!-- <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body class="bg-gray-100">
     <!-- app bar -->
-    <div class="flex items-center justify-between mt-10 px-4 mb-6">
+    <div class="flex md:hidden items-center justify-between mt-10 px-4 mb-6">
       <div>DIGI</div>
-      <div class="text-lg font-bold text-slate-800">ساعت هوشمند</div>
+      <div class="text-lg font-bold text-secondary-800">ساعت هوشمند</div>
       <div class="w-7 h-7 bg-white shadow-lg flex items-center justify-center rounded">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-5 h-5 stroke-slate-800"
+          class="w-5 h-5 stroke-secondary-800"
         >
           <path
             stroke-linecap="round"
@@ -30,7 +30,7 @@
         </svg>
       </div>
     </div>
-    <div class="flex items-center justify-between px-4 gap-x-4">
+    <div class="flex md:hidden items-center justify-between px-4 gap-x-4 mb-9">
       <div class="bg-white rounded p-4 flex items-center justify-start w-full">
         <div>
           <svg
@@ -39,7 +39,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6 stroke-orange-600"
+            class="w-6 h-6 stroke-primary-600"
           >
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
           </svg>
@@ -54,7 +54,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6 stroke-gray-300"
+            class="w-6 h-6 stroke-secondary-300"
           >
             <path
               stroke-linecap="round"
@@ -64,6 +64,27 @@
           </svg>
         </div>
         <span class="mr-4 font-medium">فیلتر : اپل </span>
+      </div>
+    </div>
+    <!-- product section -->
+    <div class="grid gap-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div class="bg-white rounded-xl shadow-lg p-2">
+        <div class="mb-5 rounded bg-secondary-200">
+          <img src="/assets/images/apple-watch-7.png" alt="ساعت هوشمند اپل سری 6" />
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-secondary-400 text-sm md:text-base">اپل</span>
+          <div class="flex items-center">
+            <div class="rounded-full bg-blue-500 w-6 h-6 cursor-pointer border-2 border-white"></div>
+            <div class="rounded-full bg-red-500 w-6 h-6 cursor-pointer -mr-1.5 border-2 border-white"></div>
+            <div class="rounded-full bg-green-500 w-6 h-6 cursor-pointer -mr-1.5 border-2 border-white"></div>
+            <div class="rounded-full bg-red-500 w-6 h-6 cursor-pointer -mr-1.5 border-2 border-white"></div>
+          </div>
+        </div>
+        <div class="font-bold mb-2 text-xs mb-3">ساعت هوشمند اپل سری 6</div>
+        <div class="text-primary-600 font-medium text-center mb-4">12,150,000 تومان</div>
+        <hr />
+        <button class="text-primary-600 w-full py-1 mt-2">مشاهده و سفارش</button>
       </div>
     </div>
   </body>
